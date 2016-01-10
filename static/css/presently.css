@@ -1,0 +1,61 @@
+body {
+    font-family: ETBembo;
+    font-size: 14pt;
+}
+
+.prly-article {
+}
+.prly-article-header {
+}
+.prly-article-body {
+}
+
+.prly-box {
+}
+.prly-box-text {
+}
+.prly-box-body {
+}
+.prly-box-child {
+}
+
+.prly-code {
+}
+
+.prly-iframe {
+}
+
+.prly-markdown {
+}
+
+.prly-page {
+}
+.prly-page-header {
+}
+.prly-page-header .prly-page-label {
+}
+.prly-page-body {
+}
+
+.prly-section { }
+.prly-section-prly-section-header { }
+.prly-section-body { }
+
+.prly-section.prly-section-slide { 
+    font-size: 150%;
+    border-width: 4px; 
+}
+.prly-section-slide .prly-section-header {
+    background: #555;
+    color: #fff;
+}
+.prly-section-slide .gist .blob-code-inner {
+    font-size: 150% !important ;}
+
+/*======================*/
+/* Presentation Mode    */
+/*======================*/
+
+.prly-on .prly-section-slide {
+    border: none;
+}

@@ -1,0 +1,278 @@
+@import url(./prism-themes/prism.css);
+@import url(./prism-themes/prism-line-numbers.css);
+@import url(./presently.css);
+@import url(./font-awesome/css/font-awesome.min.css);
+
+/*======================*/
+/* Bootstrap Fixes      */
+/*======================*/
+
+body {
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Roboto;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+h1 { font-size: 150% }
+h2 { font-size: 130% }
+h3 { font-size: 120% }
+h4 { font-size: 110% }
+h5 { font-size: 100% }
+
+.prly-box-text p:last-child {
+    margin-bottom: 0;
+}
+
+/*=====================*/
+/* Page                */
+/*=====================*/
+.prly-page-header {
+    border: thin solid #888;
+    padding: 20px;
+}
+
+/*=====================*/
+/* Section             */
+/*=====================*/
+.prly-section {
+    border: thin solid #888;
+}
+.prly-section-body {
+}
+.prly-section-header {
+    border-bottom: thin solid #ccc;
+}
+
+/*=====================*/
+/* Section             */
+/*=====================*/
+.prly-section-body > .prly-box {
+    margin-top: 10px;
+}
+.prly-section-body > .prly-box:first-child {
+    margin-top: 0;
+}
+
+.prly-section-body > .prly-box > .prly-box-body > .prly-box-child > * {
+    margin: 20px;
+}
+
+
+/*==========================*/
+/* Box                      */
+/*==========================*/
+.prly-box.horizontal > .prly-box-body > .prly-box:first-child {
+    margin-left: 0;
+}
+.prly-box.horizontal > .prly-box-body > .prly-box {
+    margin-left: 20px;
+}
+
+.prly-box.vertical > .prly-box-body > .prly-box:first-child {
+    margin-top: 0;
+}
+.prly-box.vertical > .prly-box-body > .prly-box {
+    margin-top: 20px;
+}
+.prly-box-text {
+    padding: 20px 20px 0 20px;
+}
+
+/*=========================*/
+/* Markdown                */
+/*=========================*/
+.prly-markdown.narrow {
+    max-width: 800px;
+}
+.prly-markdown.wide {
+    width: 100%;
+    flex: 1;
+}
+.prly-markdown.center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.prly-markdown.right {
+    margin-left: auto !important;
+}
+.prly-markdown.banner {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 200%;
+    text-align: center;
+    padding: 50px;
+}
+.prly-markdown.banner > ul {
+    list-style: none;
+}
+.prly-markdown blockquote {
+    border-left: 4px solid #555;
+    margin: 0;
+    padding-left: 0.5em;
+    font-size: 100%;
+}
+
+.prly-markdown > ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.prly-markdown ul ul,
+.prly-markdown ul ol,
+.prly-markdown ol ul,
+.prly-markdown ol ol
+{
+    list-style-position: outside;
+}
+
+.prly-markdown > ul > li {
+}
+
+.prly-markdown code {
+    background: transparent;
+    color: black;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.prly-markdown pre code {
+    font-family: "Ubuntu Mono",
+}
+.prly-markdown pre {
+    padding: 10px;
+    background: transparent;
+    font-size: inherit;
+}
+.prly-markdown p:last-child {
+    margin-bottom: 0;
+}
+hr {
+    border-color: #888;
+}
+
+/*========================*/
+/* Special blockquote     */
+/*========================*/
+.prly-markdown blockquote.note {
+    border-left: none;
+    border: thin solid #aaa;
+    box-shadow: 10px 10px 10px 0 #aaa;
+    margin: 20px 0 20px 0;
+}
+
+.prly-markdown blockquote.note:first-child { margin-top: 0; }
+.prly-markdown blockquote.note:last-child { margin-bottom: 0; }
+
+/*========================*/
+/* Code                   */
+/*========================*/
+pre.prly-code  {
+    font-size: inherit;
+    font-family: "Ubuntu Mono";
+    color: inherit;
+    border: none;
+    background-color: transparent;
+}
+
+.prly-iframe {
+    background: #888;
+    color: white;
+    border-radius: 4px;
+}
+.prly-iframe iframe {
+    border: none;
+}
+
+/*======================*/
+/* Images               */
+/*======================*/
+
+.prly-image-caption {
+    font-family: Roboto;
+    text-align: center;
+}
+
+
+/*======================*/
+/* MathJax              */
+/*======================*/
+.prly-markdown .MathJax_SVG_Display {
+    margin: 5px 0 5px 0 !important;
+}
+
+/*======================*/
+/* Index boxes          */
+/*======================*/
+.prly-index {
+    font-family: Ubuntu Mono; 
+    padding: 20px;
+}
+
+.prly-index h1 {
+    font-size: 120%;
+}
+
+.prly-index ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.prly-index-entry {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    opacity: 0.6;
+}
+.prly-index-entry:hover {
+    opacity: 1.0;
+}
+.prly-index-entry a,
+.prly-index-entry span {
+    display: inline-block;
+}
+.prly-index-entry .prly-index-name {
+    width: 50%;
+}
+.prly-index-entry .prly-index-text {
+    font-family: 'ETBembo';
+    font-style: italic;
+}
+.prly-index-entry a.prly-index-write {
+    float: right;
+    border: thin solid #aaa;
+    padding: 3px;
+    text-decoration: none;
+    color: #777;
+}
+
+.prly-index-entry a.prly-index-write:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.prly-index-entry .prly-index-draft {
+    margin-left: 10px;
+    border-radius: 5px;
+    background: #f88;
+    color: white;
+    padding: 5px;
+}
+
+/*======================*/
+/* PRESENTATION         */
+/*======================*/
+
+.prly-past {
+    opacity: 0.1;
+}
+.prly-now {
+    opacity: 1;
+}
+.prly-future {
+    opacity: 0.0;
+}

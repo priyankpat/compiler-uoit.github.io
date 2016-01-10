@@ -1,0 +1,22 @@
+.prly-source-editor .CodeMirror {
+    font-family: "Ubuntu Mono";
+    font-weight: inherit;
+    font-size: inherit;
+    height: auto !important;
+    box-sizing: 'border-box';
+    background: transparent;
+}
+.prly-source-editor .prly-source-editor-menu-inner {
+    opacity: 0.6;
+    -webkit-transition: opacity 0.4s;
+}
+.prly-source-editor:hover .prly-source-editor-menu-inner {
+    opacity: 1.0;
+}
+.prly-source-editor .prly-source-editor-menu {
+    border-top: thin dashed #aaa;
+}
+
+.prly-menuitem-button:hover {
+    background: #aaa;
+}
