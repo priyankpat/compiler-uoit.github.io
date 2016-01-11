@@ -267,12 +267,16 @@ pre.prly-code  {
 /* PRESENTATION         */
 /*======================*/
 
-.prly-past {
+.prly-on .prly-past {
     opacity: 0.1;
 }
-.prly-now {
+.prly-on .prly-now {
     opacity: 1;
 }
-.prly-future {
+.prly-on .prly-future {
     opacity: 0.0;
+}
+.prly-on .prly-section {
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
